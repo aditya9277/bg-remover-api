@@ -1,10 +1,10 @@
 const fs = require('fs');
 const path = require('path');
 const logger = require('../utils/logger');
-
 // Directory for storing processed images in Render
 const storageDir = path.join('/tmp', 'processed-images');
-
+//const storageDir = path.join(__dirname, '../public/images');
+//To make it run on local and save processed image to localsystem, remove line 5 and use line 6
 if (!fs.existsSync(storageDir)) {
   fs.mkdirSync(storageDir, { recursive: true });
 }

@@ -1,6 +1,7 @@
 const { removeBackgroundFromImageUrl } = require('remove.bg');
 const axios = require('axios');
 const logger = require('../utils/logger');
+const apiKey = process.env.REMOVE_BG_API_KEY
 
 exports.removeBackground = async (imageUrl, boundingBox) => {
   try {
@@ -12,7 +13,7 @@ exports.removeBackground = async (imageUrl, boundingBox) => {
 
     const result = await removeBackgroundFromImageUrl({
       url: imageUrl,  
-      apiKey: 'JAK6jETJ2BDtKvqNyoT7NR6R',  
+      apiKey: apiKey,  
       crop: true,  
       crop_margin: "0", 
       roi: roi,  
