@@ -6,7 +6,7 @@ exports.removeBackground = async (imageUrl, boundingBox) => {
   try {
     const result = await removeBackgroundFromImageUrl({
       url: imageUrl,
-      apiKey: JAK6jETJ2BDtKvqNyoT7NR6R,
+      apiKey: process.env.REMOVE_BG_API_KEY,
       crop: true,
       crop_margin: "0",
       position: {
