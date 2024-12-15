@@ -30,3 +30,4 @@
 {"level":"error","message":"Error: Failed to remove background from image\n    at exports.removeBackground (D:\\Downloads\\bg rem api\\project\\src\\services\\backgroundRemoval.js:32:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async exports.processImage (D:\\Downloads\\bg rem api\\project\\src\\controllers\\imageController.js:11:34)","timestamp":"2024-12-15T20:04:12.874Z"}
 {"level":"info","message":"Server running on port 3000","timestamp":"2024-12-15T20:05:15.957Z"}
 {"level":"info","message":"Image saved at \\tmp\\processed-images\\processed-image-1734293122963.png with public URL /images/processed-image-1734293122963.png","timestamp":"2024-12-15T20:05:22.964Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-12-15T20:13:02.969Z"}

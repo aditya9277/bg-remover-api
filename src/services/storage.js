@@ -18,6 +18,8 @@ exports.saveToRenderStorage = async (imageBuffer) => {
 
     // Save the image buffer to the storage directory
     fs.writeFileSync(filePath, imageBuffer);
+    logger.info(`Saving image to path: ${filePath}`);
+
 
     // Render can serve files statically; construct a public URL
     const publicUrl = `/images/${fileName}`;
